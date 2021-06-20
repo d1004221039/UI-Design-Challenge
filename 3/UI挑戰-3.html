@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/ed5199de00.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: #627479;
+        }
+
+        .box {
+            margin: 80px 40px;
+            height: 350px;
+            width: 280px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .box-container {
+            border-radius: 2ex;
+            overflow: hidden;
+
+            height: 350px;
+            width: 280px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .up-zone {
+            background: #fff;
+            width: 280px;
+            height: 230px;
+            position: relative;
+        }
+
+        [class^=round] {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 0;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 0%;
+            left: 50%;
+            z-index: 5;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .round-1 {
+            background: #98E1B3;
+        }
+
+        .round-2 {
+            background: #D39897;
+        }
+
+        [class^=round] i {
+            color: #fff;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+        }
+
+        h2 {
+            color: #2d3436;
+            position: absolute;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #9C9C9C;
+        }
+
+        [class^=down-zone] {
+            width: 280px;
+            height: 120px;
+            position: relative;
+        }
+
+        .down-zone-1 {
+            background: #98E1B3;
+        }
+
+        .down-zone-2 {
+            background: #D39897;
+        }
+
+        .btn {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+            border: 0;
+            padding: 15px 20px;
+            background: #fff;
+            color: #ACACAC;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        span {
+            font-size: 15px;
+            font-weight: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="round-1">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="box-container">
+            <div class="up-zone">
+                <h2>Success!</h2>
+            </div>
+            <div class="down-zone-1">
+                <button class="btn">GO AHEAD &nbsp;&nbsp;&nbsp; <span>&#8250;</span> </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="round-2">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="box-container">
+            <div class="up-zone">
+                <h2>Uh oh...</h2>
+            </div>
+            <div class="down-zone-2">
+                <button class="btn"> <span>&#8249; </span>&nbsp;&nbsp;&nbsp; TRY AGAIN </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

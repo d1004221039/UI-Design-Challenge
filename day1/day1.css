@@ -1,0 +1,64 @@
+
+/**************
+挑戰的設計是 https://collectui.com/designers/goutham-aj/sign-up
+
+**************/
+row::after{
+    content:"";
+    display: table;
+    clear:both;
+}
+body{
+    background: #FFF7ECD4;
+   
+}
+.cantainer{
+    border: 1px solid black;
+    background: #FFF;
+    width: 960px;
+    height: 450px;
+}
+.col-md-6{
+    width: calc( (100% - 100px) / 2 );
+}
+
+
+/**************
+box-1
+background: #ED764C;
+**************/
+.box-1{
+    text-align: center;
+    padding:25px;
+    float: left;
+}
+
+.img-head{
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+}
+
+.box-1 i{
+    color:rgba(232, 233, 234,0.75);
+}
+
+
+/**************
+box-2
+**************/
+.box-2{
+   
+    padding:25px;
+    float: left;
+    position: relative;
+}
+
+.input{
+    display: block;
+    position: relative;
+    margin: 20px 0;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

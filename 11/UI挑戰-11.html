@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ed5199de00.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: #A79EC2;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            width: 850px;
+            height: 600px;
+            background: #fff;
+            margin: 100px;
+            position: relative;
+        }
+
+        ul {
+            list-style: none;
+            float: right;
+
+            margin-top: 0;
+        }
+
+        li {
+            display: inline-block;
+            font-size: 10px;
+            margin: 0 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*
+top
+*/
+        .top {
+            width: 100%;
+            height: 80px;
+
+        }
+
+        .fa-arrow-left {
+            margin: 50px 0 0 50px;
+            float: left;
+            font-size: 15px;
+        }
+
+        .h2-container {
+            height: 50px;
+            width: 200px;
+            margin: 0 auto auto;
+            padding-top: 35px;
+        }
+
+        .top-h2 {
+            font-size: 15px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*
+top-list
+*/
+        .top-list {
+            margin-right: 25.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .top-list li:not(:last-child) {
+            color: #D0D0D0;
+        }
+
+        /*
+img
+*/
+        .img-container {
+            width: 1300px;
+            height: 300px;
+            margin-top: 0px;
+            position: absolute;
+            top: 30%;
+            left: -18%;
+        }
+
+        .img-small {
+            height: 250px;
+            width: 160px;
+            margin: 0 20px 20px 20px;
+            box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .img-big {
+            height: 300px;
+            width: 200px;
+            margin: 0 20px;
+            box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .play-container {
+            border-radius: 50%;
+            border: 3px solid #fff;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 40%;
+            left: 38.5%;
+            text-align: center;
+        }
+
+        .fa-play {
+            font-size: 20px;
+            color: #fff;
+            margin-top: 13px;
+        }
+
+        /*
+ footer 
+ */
+        footer {
+            width: 850px;
+            height: 100px;
+            position: absolute;
+            top: 500px
+        }
+
+        .bottom-h2 {
+            font-size: 15px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bottom-h2-container {
+            height: 30px;
+            width: 200px;
+            margin: 0 auto auto;
+
+        }
+
+        .bottom-list {
+            margin-right: 252px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bottom-list li {
+            color: #D0D0D0;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container row">
+
+        <header class="top row">
+            <i class="fas fa-arrow-left"></i>
+            <div class="h2-container">
+                <p class="top-h2">TV SHOWS</p>
+            </div>
+        </header>
+        <ul class="top-list">
+            <li>MOST POPULAR</li>
+            <li>MOST VIEWED</li>
+            <li>FAVORITES</li>
+        </ul>
+
+        <figure class="img-container">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.RRMV_7Z_Yd8785ChrFR1ngHaK-&pid=Api&P=0&w=300&h=300" alt=""
+                class="img-small">
+            <img src="https://img.zcool.cn/community/0163f3596f2eafa8012193a3f67f99.jpg@1280w_1l_2o_100sh.jpg" alt=""
+                class="img-small">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.WLZXn1NnnB3oybVmnYpKnAHaKe&pid=Api&P=0&w=300&h=300" alt=""
+                class="img-big">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.yMObQEqP-plXV5GuBp2n7wHaLH&pid=Api&P=0&w=300&h=300" alt=""
+                class="img-small">
+            <img src="https://static.newmobilelife.com/wp-content/uploads/2020/07/TENET-1.jpg" alt="" class="img-small">
+            <div class="play-container">
+                <i class="fas fa-play"></i>
+            </div>
+        </figure>
+
+        <footer class="buttom">
+            <div class="bottom-h2-container">
+                <p class="bottom-h2">BETTER CALL SAUL</p>
+            </div>
+            <ul class="bottom-list">
+                <li>TV-14</li>
+                <li>47 MIN</li>
+                <li>CRIME/DRAMA</li>
+                <li>8:8/10</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

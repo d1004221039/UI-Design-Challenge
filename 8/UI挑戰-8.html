@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ed5199de00.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: #FFD460;
+        }
+
+        .container {
+            width: 500px;
+            height: 400px;
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .fa-times {
+            float: right;
+            padding: 35px 45px 0 0;
+            font-size: 30px;
+            color: #3E5066;
+        }
+
+        .title {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #394A62;
+            font-size: 25px;
+        }
+
+        .description {
+            color: #C0D7EB;
+            font-size: 25px;
+            padding: 0 70px;
+        }
+
+        .star {
+
+            position: relative;
+        }
+
+        [class^="backshow"] {
+            width: 50px;
+            height: 60px;
+            background: rgba(255, 244, 213, 0.6);
+            display: inline-block;
+            border-radius: 20%;
+            box-shadow: 0px 0px 25px 0px rgba(255, 244, 213, 1);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 68%;
+
+        }
+
+        .backshow-1 {
+            left: 20%;
+        }
+
+        .backshow-2 {
+            left: 40%;
+        }
+
+        .backshow-3 {
+            left: 60%;
+        }
+
+        .backshow-4 {
+            left: 80%;
+        }
+
+        .star-1 {
+            font-size: 60px;
+            color: #FFD460;
+            margin: 0 15px;
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="x-container row">
+            <i class="fas fa-times"></i>
+        </div>
+        <h2 class="title">DO YOU LIKE OUR APP？</h2>
+        <P class="description">Give us a quick rating so we know if you like it ？</P>
+        <div class="star">
+            <div class="backshow-1"></div>
+            <div class="backshow-2"></div>
+            <div class="backshow-3"></div>
+            <div class="backshow-4"></div>
+            <i class="fas fa-star star-1"></i>
+            <i class="fas fa-star star-1"></i>
+            <i class="fas fa-star star-1"></i>
+            <i class="fas fa-star star-1"></i>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ed5199de00.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: #A5DBF0;
+        }
+
+        header {
+            width: 500px;
+            height: 80px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            width: 500px;
+            height: 250px;
+            background: #FEFEFE;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .col-md-2 {
+            width: calc(100%/6);
+        }
+
+        .fa-times {
+            float: right;
+            margin: 10px 15px 0 0;
+            color: #D9D1CF;
+            font-size: 15px;
+        }
+
+        .search {
+            border: 3px solid #D9D1CF;
+            border-radius: 15px;
+            width: 400px;
+            height: 60px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 20px 5px rgba(217, 209, 207, 0.7);
+        }
+
+        .search input {
+            width: 35px;
+            height: 10px;
+        }
+
+        p {
+            color: #CFC5C4;
+            font-size: 20px;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            float: left;
+        }
+
+        .fa-search {
+            float: right;
+            font-size: 25px;
+            margin: 10px 10px 0 0;
+            border-left: 3px solid #D9D1CF;
+            padding: 7px 7px 9px 15px;
+            color: #D9D1CF;
+        }
+
+        footer {
+            width: 500px;
+            height: 100px;
+            margin-top: 70px;
+        }
+
+        [class^="color-"] {
+            float: left;
+            height: 50px;
+        }
+
+        .color-1 {
+            background: #4285F4;
+        }
+
+        .color-2 {
+            background: #EA4335;
+        }
+
+        .color-3 {
+            background: #FBBC05;
+        }
+
+        .color-4 {
+            background: #4285F4;
+        }
+
+        .color-5 {
+            background: #34A853;
+        }
+
+        .color-6 {
+            background: #EA4335;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <i class="fas fa-times"></i>
+        </header>
+
+        <div class="search">
+            <p>Google me</p>
+            <i class="fas fa-search"></i>
+        </div>
+
+        <footer class="row">
+            <div class="color-1 col-md-2"></div>
+            <div class="color-2 col-md-2"></div>
+            <div class="color-3 col-md-2"></div>
+            <div class="color-4 col-md-2"></div>
+            <div class="color-5 col-md-2"></div>
+            <div class="color-6 col-md-2"></div>
+        </footer>
+    </div>
+</body>
+
+</html>

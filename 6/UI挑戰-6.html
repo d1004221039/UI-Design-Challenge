@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ed5199de00.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: #DBE4E8;
+        }
+
+        .box-container {
+            width: 270px;
+            height: 480px;
+            background: #fff;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+
+            display: inline-block;
+            margin: 50px 20px;
+        }
+
+        /*******
+        circle
+        ********/
+        .circle-container {
+            width: 270px;
+            height: 85px;
+            padding-top: 50px;
+
+        }
+
+        [class^="circle-1ogo-"] {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .circle-1ogo-1 {
+            border: 2px solid #007F35;
+        }
+
+        .circle-1ogo-2 {
+            border: 2px solid #E30613;
+        }
+
+        [class^="circle-1ogo-"] i {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            font-size: 40px;
+        }
+
+        .circle-1ogo-1 i {
+            color: #007F35;
+        }
+
+        .circle-1ogo-2 i {
+            color: #E30613;
+        }
+
+        .h2-title {
+            text-align: center;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content {
+            margin: 0 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .down-btn {
+            background: black;
+            border-radius: 20px;
+            border: 0px;
+            color: #fff;
+            height: 40px;
+            width: 120px;
+            display: block;
+            margin: 100px auto;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-container">
+        <div class="circle-container">
+            <div class="circle-1ogo-1">
+                <i class="fas fa-check"></i>
+            </div>
+        </div>
+
+        <h2 class="h2-title">Well done</h2>
+        <p class="content">Lorem ipsum amet consectetur adipisicing elit. Illum repellendus excepturi ea ipsa</p>
+
+        <button class="down-btn">Home</button>
+    </div>
+
+    <div class="box-container">
+        <div class="circle-container">
+            <div class="circle-1ogo-2">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <h2 class="h2-title">Ooops</h2>
+        <p class="content">Lorem ipsum amet consectetur adipisicing elit. Illum repellendus excepturi ea ipsa</p>
+
+        <button class="down-btn">Try again</button>
+    </div>
+</body>
+
+
+</html>

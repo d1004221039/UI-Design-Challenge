@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/ed5199de00.js" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            width: 600px;
+        }
+
+
+
+        .lin-block {
+            display: inline-block;
+        }
+
+        .row::after {
+            content: ””;
+            display: table;
+            clear: both;
+
+        }
+
+        .pt-5 {
+            padding-top: 5px;
+        }
+
+        .pt-10 {
+            padding-top: 10px;
+        }
+
+        .pt-35 {
+            padding-top: 35px;
+        }
+
+        .mr-20 {
+            margin-right: 20px;
+        }
+
+        .ml-20 {
+            margin-left: 20px;
+        }
+
+        .mr-10 {
+            margin-right: 10px;
+        }
+
+        .mt-0 {
+            margin-top: 0px;
+        }
+
+        .mt-15 {
+            margin-top: 15px;
+        }
+
+
+        .md-0 {
+            margin-bottom: 0px;
+        }
+
+        /****
+        nav
+        ****/
+        .nav-container {
+            height: 80px;
+            position: relative;
+        }
+
+        [class^=side-nav] {
+            border-bottom: 1px solid #AAAAAA;
+            width: 170px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .side-nav-l {
+            top: 55%;
+            left: 15%;
+        }
+
+
+        .side-nav-r {
+            top: 55%;
+            right: -13%;
+        }
+
+        .mid-nav {
+
+            text-align: center;
+        }
+
+        .mid-nav h2 {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: -1px;
+        }
+
+        /****
+        section
+        ****/
+
+        section {
+            width: 600px;
+            height: 500px;
+        }
+
+        [class ^="player-container"]:not(:first-child) {
+            width: 350px;
+            height: 65px;
+
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
+            margin: 10px auto;
+
+        }
+
+        .player-container-1 {
+            width: 430px;
+            height: 100px;
+
+            margin: 10px auto;
+            background: #4EB5FF;
+            box-shadow: 0px 10px 17px -4px rgba(0, 0, 0, 0.6);
+        }
+
+
+        .player-img-container {
+            border-radius: 50%;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            margin: 5px 20px 0px 20px;
+        }
+
+        .player-img-container-1 {
+            border-radius: 50%;
+            border: 1px solid #FFF;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            margin: 18px 25px 0px 25px;
+            background: #fff;
+
+        }
+
+        .player-img-container img {
+            height: 55px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+
+        }
+
+        .player-img-container-1 img {
+            height: 65px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+
+        }
+
+        .name-and-team {
+
+            height: 65px;
+            width: 150px;
+            float: left;
+        }
+
+        .name-and-team-1 {
+
+            height: 65px;
+            width: 220px;
+            float: left;
+        }
+
+        .name {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .team {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color: #BAC4CF;
+        }
+
+        .name-1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #FFF;
+        }
+
+        .team-1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color: #FFF;
+        }
+
+        .rank-container {
+            float: right;
+            height: 65px;
+            text-align: center;
+            width: 50px;
+        }
+
+        .rank {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .rank-container-1 {
+            float: right;
+            height: 70px;
+            text-align: center;
+            width: 80px;
+        }
+
+        .rank-container-1 i {
+            color: #F8D31C;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container nav-container">
+        <div class="side-nav-l lin-block"></div>
+        <div class="mid-nav pt-5 ">
+            <h2>2019 NBA MVP</h2>
+        </div>
+        <div class="side-nav-r lin-block"></div>
+    </nav>
+    <section>
+        <div class="player-container-1">
+            <figure class="player-img-container-1 mt-15">
+                <img src="https://www.basketball-reference.com/req/202105292/images/players/antetgi01.jpg" alt="">
+            </figure>
+            <div class="name-and-team-1 mt-15">
+                <h3 class="name-1 mt-15 md-0">Giannis Antetokounmpo</h3>
+                <p class="team-1 md-0 mt-0">Milwaukee Bucks</p>
+            </div>
+            <div class="rank-container-1 pt-35">
+                <i class="fas fa-crown"></i>
+            </div>
+        </div>
+        <div class="player-container row">
+            <figure class="player-img-container  ">
+                <img src="https://www.basketball-reference.com/req/202105292/images/players/hardeja01.jpg" alt="">
+            </figure>
+            <div class="name-and-team ">
+                <h3 class="name mt-15 md-0">James Harden</h3>
+                <p class="team md-0 mt-0">Houston Rockets </p>
+            </div>
+            <div class="rank-container pt-5">
+                <p class="rank">2</p>
+            </div>
+        </div>
+        <div class="player-container row">
+            <figure class="player-img-container mr-10 ml-20">
+                <img src="https://www.basketball-reference.com/req/202105292/images/players/georgpa01.jpg" alt="">
+            </figure>
+            <div class="name-and-team ">
+                <h3 class="name mt-15 md-0">Paul George</h3>
+                <p class="team md-0 mt-0">Los Angeles Clippers </p>
+            </div>
+            <div class="rank-container pt-5">
+                <p class="rank">3</p>
+            </div>
+        </div>
+        <div class="player-container row">
+            <figure class="player-img-container mr-10 ml-20">
+                <img src="https://www.basketball-reference.com/req/202105292/images/players/jokicni01.jpg" alt="">
+            </figure>
+            <div class="name-and-team ">
+                <h3 class="name mt-15 md-0">Nikola Jokić</h3>
+                <p class="team md-0 mt-0">Denver Nuggets </p>
+            </div>
+            <div class="rank-container pt-5">
+                <p class="rank">4</p>
+            </div>
+        </div>
+        <div class="player-container row">
+            <figure class="player-img-container mr-10 ml-20">
+                <img src="https://www.basketball-reference.com/req/202105292/images/players/curryst01.jpg" alt="">
+            </figure>
+            <div class="name-and-team ">
+                <h3 class="name mt-15 md-0">Stephen Curry</h3>
+                <p class="team md-0 mt-0">Golden State Warriors </p>
+            </div>
+            <div class="rank-container pt-5">
+                <p class="rank">5</p>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ed5199de00.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: #ECF0F1;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            background: #fff;
+            width: 600px;
+            height: 300px;
+            box-shadow: 0px 8px 21px -2px rgba(0, 0, 0, 0.72);
+            margin: 50px 50px;
+        }
+
+        /********
+        icon
+        *********/
+        [class^="icon-"] {
+            border: 2px solid black;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .icons-container {
+            width: 600px;
+            height: 80px;
+        }
+
+        .icon-L {
+            top: 40%;
+            left: 10%;
+        }
+
+        .icon-list {
+            border: 2px solid #fff;
+            top: 40%;
+            left: 80%;
+        }
+
+        .L {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .icon-list i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /********
+        h2
+        *********/
+        .h2-container {
+            width: 250px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #585858;
+        }
+
+        .p-container {
+            width: 280px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /********
+        btn
+        *********/
+        .btn-container {
+            height: 50px;
+            padding-top: 15px;
+            text-align: center;
+        }
+
+        .btn-left {
+            width: 90px;
+            height: 15px;
+            margin-right: 8px;
+            background: #fff;
+            border: 1px solid #AFAFAF;
+            font-size: 1px;
+            color: #AFAFAF;
+        }
+
+        .btn-right {
+            width: 90px;
+            height: 15px;
+            background: #FFBA26;
+            border: 0;
+            font-size: 1px;
+            color: #585858;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icons-container">
+            <div class="icon-L">
+                <div class="L">L</div>
+            </div>
+            <div class="icon-list">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="h2-container">
+            <h2>You weren't supposed to find this place.</h2>
+        </div>
+        <div class="p-container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae aperiam autem tempora laboriosam velit,
+                optio nulla commodi cumque </p>
+        </div>
+        <div class="btn-container">
+            <button class="btn-left">------- ></button>
+            <!-- CHAT WITH THE DEVL -->
+            <button class="btn-right">------- ></button>
+            <!-- GO BACK HOME -->
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

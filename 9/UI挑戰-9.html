@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #6D82E2;
+        }
+
+        .container {
+            width: 900px;
+            height: 600px;
+            background-color: #fff;
+            position: relative;
+        }
+
+        /*****
+         top
+        *****/
+        .top {
+            width: 900px;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .top-img {
+            width: 900px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 20%;
+            filter: brightness(50%);
+        }
+
+        h2 {
+            color: #EDEDEC;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .commodity-p {
+            color: #EDEDEC;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 10px;
+        }
+
+        .commodity {
+            position: relative;
+            top: 15%;
+            left: 10%;
+            height: 150px;
+        }
+
+        /*****
+         down
+        *****/
+        .down {
+            height: 200px;
+
+            margin-top: 80px;
+        }
+
+        .demo-list {
+
+            height: 25px;
+            margin: 0 95px;
+        }
+
+        .demo-name {
+            font-size: 25px;
+            color: #4A4A4A;
+        }
+
+        .point {
+            color: #BEBFCB;
+            font-size: 30px;
+            margin: 0 10px;
+        }
+
+        .total {
+            color: #8F90A4;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .product {
+            float: left;
+            color: #4A4A4A;
+            font-size: 20px;
+
+        }
+
+        .price {
+            float: right;
+            margin: 20px 10px 0 0;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .zero {
+            font-size: 15px;
+        }
+
+        /*****
+        btn
+        *****/
+        button {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 58%;
+            left: 24%;
+            color: #fff;
+            background: #A975FF;
+            width: 250px;
+            height: 80px;
+            border-radius: 50px;
+            border: 0;
+            font-size: 25px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0px 11px 20px 3px rgba(169, 117, 255, 0.62);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <img class="top-img"
+                src="https://images.pexels.com/photos/439405/pexels-photo-439405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="">
+            <div class="commodity">
+                <h2>Purchase complete</h2>
+                <p class="commodity-p">Order placed on</p>
+                <p class="commodity-p">Monday,December 21,2015</p>
+            </div>
+        </div>
+
+        <div class="down">
+            <div class="demo-list">
+                <p class="demo-name">BMW X6 M <span class="point">
+                        .................................................................
+                    </span> <span class="total"> Total</span> </p>
+            </div>
+            <div class="demo-list">
+                <p class="product">The BMW X6 M combines the spirit... </p>
+                <p class="price">$83,000 <span class="zero">.00</span> </p>
+            </div>
+        </div>
+
+        <button>Track order</button>
+
+
+    </div>
+</body>
+
+</html>
