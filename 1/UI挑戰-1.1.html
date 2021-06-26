@@ -16,10 +16,16 @@
             background: blanchedalmond;
         }
 
+        .mid {
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
         .box-container {
             display: inline-block;
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-            margin-top: 100px;
+            margin-top: 50px;
             margin-left: 40px;
         }
 
@@ -96,26 +102,28 @@
 </head>
 
 <body>
-    <div class="box-container">
-        <div class="box">
-            <div class="remind">
-                <i class="fas fa-times"></i>
+    <div class="mid">
+        <div class="box-container">
+            <div class="box">
+                <div class="remind">
+                    <i class="fas fa-times"></i>
+                </div>
+                <p class="error">ERROR</p>
             </div>
-            <p class="error">ERROR</p>
+            <div class="div-bottom">TRY AGAIN</div>
+
         </div>
-        <div class="div-bottom">TRY AGAIN</div>
 
-    </div>
-
-    <div class="box-container">
-        <div class="box">
-            <div class="remind2">
-                <i class="fas fa-check"></i>
+        <div class="box-container">
+            <div class="box">
+                <div class="remind2">
+                    <i class="fas fa-check"></i>
+                </div>
+                <p class="success">SUCCESS</p>
             </div>
-            <p class="success">SUCCESS</p>
-        </div>
-        <div class="div-bottom2">CONTINUE</div>
+            <div class="div-bottom2">CONTINUE</div>
 
+        </div>
     </div>
 </body>
 
