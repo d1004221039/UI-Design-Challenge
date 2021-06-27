@@ -16,23 +16,29 @@
             background: blanchedalmond;
         }
 
+        .mid {
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
         .box-container {
             display: inline-block;
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
             margin-top: 50px;
-            margin-left: 20px;
+            margin-left: 40px;
         }
 
         .box {
-            width: 155px;
-            height: 255px;
+            width: 310px;
+            height: 510px;
             background: #FFF;
             text-align: center;
         }
 
         [class^="remind"] {
-            width: 75px;
-            height: 75px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             margin: 0 auto;
             position: relative;
@@ -40,15 +46,15 @@
         }
 
         .remind {
-            border: 2px solid #FF404E;
+            border: 4px solid #FF404E;
         }
 
         .remind2 {
-            border: 2px solid #1EE472;
+            border: 4px solid #1EE472;
         }
 
         [class^="remind"] i {
-            font-size: 50px;
+            font-size: 100px;
             position: absolute;
             transform: translate(-50%, -50%);
             top: 50%;
@@ -66,18 +72,18 @@
         .box p {
             position: relative;
             top: 35%;
-            font-size: 1px;
+            font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         [class^="div-bottom"] {
-            width: 155px;
-            height: 20px;
+            width: 310px;
+            height: 40px;
             color: #FFF;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 5px;
-            padding-top: 5px;
+            font-size: 20px;
+            padding-top: 20px;
         }
 
         .div-bottom {
@@ -96,26 +102,28 @@
 </head>
 
 <body>
-    <div class="box-container">
-        <div class="box">
-            <div class="remind">
-                <i class="fas fa-times"></i>
+    <div class="mid">
+        <div class="box-container">
+            <div class="box">
+                <div class="remind">
+                    <i class="fas fa-times"></i>
+                </div>
+                <p class="error">ERROR</p>
             </div>
-            <p class="error">ERROR</p>
+            <div class="div-bottom">TRY AGAIN</div>
+
         </div>
-        <div class="div-bottom">TRY AGAIN</div>
 
-    </div>
-
-    <div class="box-container">
-        <div class="box">
-            <div class="remind2">
-                <i class="fas fa-check"></i>
+        <div class="box-container">
+            <div class="box">
+                <div class="remind2">
+                    <i class="fas fa-check"></i>
+                </div>
+                <p class="success">SUCCESS</p>
             </div>
-            <p class="success">SUCCESS</p>
-        </div>
-        <div class="div-bottom2">CONTINUE</div>
+            <div class="div-bottom2">CONTINUE</div>
 
+        </div>
     </div>
 </body>
 
